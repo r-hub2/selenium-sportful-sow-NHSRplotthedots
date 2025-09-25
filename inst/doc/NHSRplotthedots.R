@@ -113,19 +113,19 @@ a <- ptd_spc(
 
 a + theme(axis.text.x = element_text(size = 6, angle = 45))
 
-## ----plotly-------------------------------------------------------------------
-ptd_spc(
-  facet_set,
-  value_field = breaches,
-  date_field = period,
-  facet_field = org_code,
-  improvement_direction = "decrease"
-) %>%
-  ptd_create_plotly(
-    fixed_y_axis_multiple = FALSE,
-    x_axis_breaks = "3 months",
-    point_size = 2,
-    y_axis_label = "Number of 4-hour A&E target breaches",
-    icons_position = "none"
-  )
+## ----plotly, eval=FALSE-------------------------------------------------------
+# ptd_spc(
+#   facet_set,
+#   value_field = breaches,
+#   date_field = period,
+#   facet_field = org_code,
+#   improvement_direction = "decrease"
+# ) %>%
+#   ptd_create_plotly(
+#     fixed_y_axis_multiple = FALSE,
+#     x_axis_breaks = "3 months",
+#     point_size = 2,
+#     y_axis_label = "Number of 4-hour A&E target breaches",
+#     icons_position = "none"
+#   )
 
